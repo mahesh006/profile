@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content= "ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+    <style>
+        header{
+            background: url(pic.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        } 
+        @media screen and (max-width: 670px) {
+            header{
+                min-height: 500px;
+            }
+        }  
+        .section{
+            padding-top: 4vw;
+            padding-bottom: 4vw; 
+        } 
+        .container1 {
+            font-family: 'Raleway', sans-serif;            
+            color: #FFFFFF;   
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100px;
+            padding: 04rem;   
+            font-weight: 500;      
+        } 
+        .tabs .indicator {
+          background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+          background: transparent;
+        }  
+        #only label{
+          color: white;
+        } 
+         
+    </style>      
+</head>
+<body>
+    <header>
+        <nav class="nav-wrapper transparent">
+          <div class="container">
+            
+            <a href="#" class="brand-logo">AI Voice 0.1.0</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+              <i class="material-icons">menu</i>
+            </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#photos">services</a></li>
+                    <li><a href="#">Tutorial</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#"><i class="material-icons">home</i></i>About</a></li>
+                    <li><a href="#photos"><i class="material-icons">public</i>services</a></li>
+                    <li><a href="#"><i class="material-icons">book</i>Tutorial</a></li>
+                    <li><a href="#contact"><i class="material-icons">email</i>contact</a></li>
+                </ul>                
+            </div>
+        </nav>
+        
+        <section class="section container scrollspy" id="contact">
+          <div class="row">
+            <div class="col s12 l5">
+              <div class="container1">                        
+                <span class="flow-text" data-wait="2000" data-words='["Innovative,","Creative."]'>                
+                </span>            
+            </div>
+            </div>
+            <div class="col s12 l5 offset-l2">
+              <form>
+                <div class="input-field" id="only">
+                  <i class="material-icons prefix">email</i>
+                  <input type="email" id="email">
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-field" id="only">
+                  <i class="material-icons prefix">phonelink_lock</i>
+                  <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+                  <label for="message">Password</label>
+                </div>
+                <div class="input-field center">
+                  <button class="btn">Login</button>
+                </div>
+              </form>              
+            </div>
+            <div class="col l6 s12 ">
+              <button class="btn">Demo</button>
+            </div>
+          </div>          
+        </section>
+       
+    </header> 
+    
+
+    <section class="container section scrollspy" id="photos">
+        <div class="row">         
+          <div class="col s12 ">
+            <h2 class="indigo-text text-darken-4">Services</h2>            
+          </div>
+        </div> 
+        <div class="col s12 16">
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#Photography" class="indigo-text text-darken-4">NEAR</a>
+            </li>
+            <li class="tab col s6">
+              <a href="#Editing" class="indigo-text text-darken-4">FAR AWAY</a>
+            </li>
+          </ul>
+          <div class="col s12" id="Photography">
+            <p class="flow-text indigo-text text-darken-4">Near</p>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+              It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+              Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+            </p>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+               It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+               Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+            </p>
+          </div>
+            <div class="col s12" id="Editing">
+              <p class="flow-text indigo-text text-darken-4">Far Away</p>
+              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+                Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+              </p>
+              <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+                 It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+                 Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+              </p>
+          </div>
+        </div>        
+    </section>
+
+    <section class="section container scrollspy" id="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="indigo-text text-darken-4">Get in Touch</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+          
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <form>
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email">
+              <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <div class="input-field center">
+              <button class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5>About Us</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
+              <li><a class="grey-text text-lighten-3" href="#">Twitter</a></li>
+              <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
+              <li><a class="grey-text text-lighten-3" href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container center-align">copyright &copy; 2020 AI Voice India.Inc. All rights reserved. <u>Terms to use</u></div>
+      </div>
+    </footer> 
+
+       
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.tabs').tabs();
+            $('.scrollspy').scrollSpy();
+        })
+    </script> 
+    <script>
+  class TypeWriter {
+  constructor(txtElement, words, wait = 3000) {
+    this.txtElement = txtElement;
+    this.words = words;
+    this.txt = '';
+    this.wordIndex = 0;
+    this.wait = parseInt(wait, 10);
+    this.type();
+    this.isDeleting = false;
+  }
+  type() {   
+    const current = this.wordIndex % this.words.length;    
+    const fullTxt = this.words[current];    
+    if(this.isDeleting) {      
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {      
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }    
+    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;    
+    let typeSpeed = 300;
+    if(this.isDeleting) {
+      typeSpeed /= 2;
+    }   
+    if(!this.isDeleting && this.txt === fullTxt) {
+      
+      typeSpeed = this.wait;
+      
+      this.isDeleting = true;
+    } else if(this.isDeleting && this.txt === '') {
+      this.isDeleting = false;      
+      this.wordIndex++;      
+      typeSpeed = 500;
+    }
+
+    setTimeout(() => this.type(), typeSpeed);
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', init);
+
+function init() {
+  const txtElement = document.querySelector('.flow-text');
+  const words = JSON.parse(txtElement.getAttribute('data-words'));
+  const wait = txtElement.getAttribute('data-wait');
+  
+  new TypeWriter(txtElement, words, wait);
+}
+
+
+    </script>    
+    
+</body>
+</html>
